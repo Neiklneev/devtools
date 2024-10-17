@@ -1,8 +1,9 @@
 local function setup()
-  vim.api.nvim_create_user_command('RunPython', run_file, {})
+
 end
 
 local function map()
+  vim.api.nvim_create_user_command('RunPython', run_file, {})
   vim.api.nvim_set_keymap('n', "<leader>r", ':RunPython<CR>', { noremap = true, silent = true })
 end
 
