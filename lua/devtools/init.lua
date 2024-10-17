@@ -8,8 +8,8 @@ local function setup()
   end, {})
 end
 
-local function map(key='<leader>r')
-  vim.api.nvim_set_keymap('n', key, ':RunPython<CR>', { noremap = true, silent = true })
+local function map()
+  vim.api.nvim_set_keymap('n', "<leader>r", ':RunPython<CR>', { noremap = true, silent = true })
 end
 
 
